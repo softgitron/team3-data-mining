@@ -1,0 +1,19 @@
+CROSS_VALIDATION_CV: 5
+HYPER_PARAMETER_CLASS_WEIGHT: balanced
+HYPER_PARAMETER_GAMMA: ['scale']
+HYPER_PARAMETER_KERNEL: ['rbf']
+HYPER_PARAMETER_OPTIMIZATION_CV: 2
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: svm
+OUTPUT_MODEL: ../data/models/svm_model_04_05_2022-13_51_43.pkl
+OUTPUT_RESULTS: ../data/results/svm_model_04_05_2022-13_51_43.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+TIMESTAMP: 04_05_2022-13_51_43
+evaluation_accuracy: 0.6462121212121212
+evaluation_confusion_matrix: True operational=493, True bankrupt=12, False operational=167, False bankrupt=10
+parameters: {'classification__kernel': ['rbf'], 'classification__gamma': ['scale']}
+training_accuracy: 0.7880263316784617
+training_confusion_matrix: True operational=4471, True bankrupt=163, False operational=1468, False bankrupt=35

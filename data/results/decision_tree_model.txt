@@ -1,0 +1,19 @@
+HYPER_PARAMETER_CLASS_WEIGHT: balanced
+HYPER_PARAMETER_CRITERION: ['gini', 'entropy']
+HYPER_PARAMETER_MAX_DEPTH: [20]
+HYPER_PARAMETER_MAX_FEATURES: ['auto', 'sqrt', 'log2', None]
+HYPER_PARAMETER_OPTIMIZATION_CV: 10
+HYPER_PARAMETER_OPTIMIZATION_SCORING: balanced_accuracy
+INPUT_EVALUATION_FILE: ../data/preprocessed/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/preprocessed/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: decision_tree
+OUTPUT_MODEL: ../data/models/decision_tree_model.pkl
+OUTPUT_RESULTS: ../data/results/decision_tree_model.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+evaluation_accuracy: 0.5158467360454115
+evaluation_confusion_matrix: True operational=580, True bankrupt=1, False operational=24, False bankrupt=13
+parameters: {'classification__criterion': ['gini', 'entropy'], 'classification__max_features': ['auto', 'sqrt', 'log2', None], 'classification__max_depth': [20]}
+training_accuracy: 0.9938373804267844
+training_confusion_matrix: True operational=5369, True bankrupt=122, False operational=67, False bankrupt=0
