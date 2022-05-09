@@ -1,0 +1,20 @@
+HYPER_PARAMETER_CLASS_WEIGHT: balanced
+HYPER_PARAMETER_CRITERION: ['gini', 'entropy']
+HYPER_PARAMETER_MAX_DEPTH: [10]
+HYPER_PARAMETER_MAX_FEATURES: ['auto', 'sqrt', 'log2', None]
+HYPER_PARAMETER_OPTIMIZATION_CV: 10
+HYPER_PARAMETER_OPTIMIZATION_SCORING: balanced_accuracy
+INPUT_EVALUATION_FILE: ../data/preprocessed/difference_preprocessed_evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/preprocessed/difference_preprocessed_training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: knn
+OUTPUT_MODEL: ../data/models/knn_model_09_05_2022-16_03_17.pkl
+OUTPUT_RESULTS: ../data/results/knn_model_09_05_2022-16_03_17.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+TIMESTAMP: 09_05_2022-16_03_17
+evaluation_accuracy: 0.5776515151515151
+evaluation_confusion_matrix: True operational=1315, True bankrupt=7, False operational=5, False bankrupt=37
+parameters: {'n_neighbors': range(2, 9)}
+training_accuracy: 0.6101324501885688
+training_confusion_matrix: True operational=5272, True bankrupt=39, False operational=7, False bankrupt=137
