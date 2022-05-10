@@ -1,0 +1,44 @@
+CROSS_VALIDATION_CV: 5
+HYPER_PARAMETER_CLASS_WEIGHT: balanced
+HYPER_PARAMETER_GAMMA: ['scale']
+HYPER_PARAMETER_KERNEL: ['rbf']
+HYPER_PARAMETER_OPTIMIZATION_CV: 2
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: xgboost
+OUTPUT_MODEL: ../data/models/xgboost_model_09_05_2022-21_04_07.pkl
+OUTPUT_RESULTS: ../data/results/xgboost_model_09_05_2022-21_04_07.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+TIMESTAMP: 09_05_2022-21_04_07
+current_variables: ['CROSS_VALIDATION_CV', 'GridSearchCV', 'HYPER_PARAMETER_CLASS_WEIGHT', 'HYPER_PARAMETER_GAMMA', 'HYPER_PARAMETER_KERNEL', 'HYPER_PARAMETER_OPTIMIZATION_CV', 'HYPER_PARAMETER_OPTIMIZATION_SCORING', 'INPUT_EVALUATION_FILE', 'INPUT_TRAINING_FILE', 'In', 'LABELS', 'METHOD_NAME', 'OUTPUT_MODEL', 'OUTPUT_RESULTS', 'Out', 'PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION', 'Pipeline', 'RANDOM_SEED', 'StratifiedKFold', 'TIMESTAMP', '_', '_139', '_142', '__', '___', '__builtin__', '__builtins__', '__name__', '_dh', '_i', '_i135', '_i136', '_i137', '_i138', '_i139', '_i140', '_i141', '_i142', '_i143', '_i144', '_i145', '_i146', '_i147', '_i148', '_i149', '_ih', '_ii', '_iii', '_oh', 'balanced_accuracy_score', 'confusion_matrix', 'confusion_matrix_to_string', 'cross_val_score', 'current_variables', 'cv', 'environment_variables', 'evaluation_accuracy', 'evaluation_confusion_matrix', 'evaluation_dataset', 'evaluation_estimates', 'evaluation_features', 'evaluation_targets', 'exit', 'file', 'get_ipython', 'grid_estimator', 'grid_search_results', 'handle', 'numpy', 'parameters', 'pd', 'pickle', 'quit', 'results_string', 'scores', 'time', 'training_accuracy', 'training_confusion_matrix', 'training_dataset', 'training_estimates', 'training_features', 'training_targets', 'variable', 'variable_value', 'warnings', 'xgb', 'xgb_classifier', 'xgb_pipeline']
+evaluation_accuracy: 0.6912878787878788
+evaluation_confusion_matrix: True operational=1315, True bankrupt=17, False operational=5, False bankrupt=27
+parameters: {'clasification__learning_rate': [0.3], 'clasification__n_estimators': range(50, 150, 50), 'clasification__max_depth': [3, 4, 5, 6, 7]}
+results_string: CROSS_VALIDATION_CV: 5
+HYPER_PARAMETER_CLASS_WEIGHT: balanced
+HYPER_PARAMETER_GAMMA: ['scale']
+HYPER_PARAMETER_KERNEL: ['rbf']
+HYPER_PARAMETER_OPTIMIZATION_CV: 2
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: xgboost
+OUTPUT_MODEL: ../data/models/xgboost_model_09_05_2022-21_04_07.pkl
+OUTPUT_RESULTS: ../data/results/xgboost_model_09_05_2022-21_04_07.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+TIMESTAMP: 09_05_2022-21_04_07
+current_variables: ['CROSS_VALIDATION_CV', 'GridSearchCV', 'HYPER_PARAMETER_CLASS_WEIGHT', 'HYPER_PARAMETER_GAMMA', 'HYPER_PARAMETER_KERNEL', 'HYPER_PARAMETER_OPTIMIZATION_CV', 'HYPER_PARAMETER_OPTIMIZATION_SCORING', 'INPUT_EVALUATION_FILE', 'INPUT_TRAINING_FILE', 'In', 'LABELS', 'METHOD_NAME', 'OUTPUT_MODEL', 'OUTPUT_RESULTS', 'Out', 'PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION', 'Pipeline', 'RANDOM_SEED', 'StratifiedKFold', 'TIMESTAMP', '_', '_139', '_142', '__', '___', '__builtin__', '__builtins__', '__name__', '_dh', '_i', '_i135', '_i136', '_i137', '_i138', '_i139', '_i140', '_i141', '_i142', '_i143', '_i144', '_i145', '_i146', '_i147', '_i148', '_i149', '_ih', '_ii', '_iii', '_oh', 'balanced_accuracy_score', 'confusion_matrix', 'confusion_matrix_to_string', 'cross_val_score', 'current_variables', 'cv', 'environment_variables', 'evaluation_accuracy', 'evaluation_confusion_matrix', 'evaluation_dataset', 'evaluation_estimates', 'evaluation_features', 'evaluation_targets', 'exit', 'file', 'get_ipython', 'grid_estimator', 'grid_search_results', 'handle', 'numpy', 'parameters', 'pd', 'pickle', 'quit', 'results_string', 'scores', 'time', 'training_accuracy', 'training_confusion_matrix', 'training_dataset', 'training_estimates', 'training_features', 'training_targets', 'variable', 'variable_value', 'warnings', 'xgb', 'xgb_classifier', 'xgb_pipeline']
+evaluation_accuracy: 0.6912878787878788
+evaluation_confusion_matrix: True operational=1315, True bankrupt=17, False operational=5, False bankrupt=27
+parameters: {'clasification__learning_rate': [0.3], 'clasification__n_estimators': range(50, 150, 50), 'clasification__max_depth': [3, 4, 5, 6, 7]}
+
+training_accuracy: 0.9943181818181819
+training_confusion_matrix: True operational=5279, True bankrupt=174, False operational=0, False bankrupt=2
+variable: variable
+variable_value: variable
+Best model: Acc. Score = 0.969936, with parameters {'clasification__learning_rate': 0.3, 'clasification__max_depth': 4, 'clasification__n_estimators': 50}

@@ -1,0 +1,22 @@
+CROSS_VALIDATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: keras_tensorflow_resnet
+OUTPUT_MODEL: ../data/models/keras_tensorflow_resnet_model_10_05_2022-20_32_42.pkl
+OUTPUT_MODEL_ARCHITECTURE_RESULTS: ../img/keras_tensorflow_resnet_model_10_05_2022-20_32_42.png
+OUTPUT_MODEL_FOLDER: ../data/models/keras_models
+OUTPUT_RESULTS: ../data/results/keras_tensorflow_resnet_model_10_05_2022-20_32_42.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+TIMESTAMP: 10_05_2022-20_32_42
+evaluation_accuracy: 0.5223484848484848
+evaluation_confusion_matrix: True operational=1319, True bankrupt=2, False operational=1, False bankrupt=42
+input_n: 95
+loss: binary_crossentropy
+metrics: ['accuracy', 'MeanSquaredError', 'AUC', 'RootMeanSquaredError']
+optimizer: adam
+training_accuracy: 0.5594696610928378
+training_confusion_matrix: True operational=5277, True bankrupt=21, False operational=2, False bankrupt=155
