@@ -1,0 +1,21 @@
+HYPER_PARAMETER_C: [0.2, 0.4, 0.6000000000000001, 0.8, 1.0, 1.2, 1.4000000000000001, 1.6, 1.8]
+HYPER_PARAMETER_CLASS_WEIGHT: balanced
+HYPER_PARAMETER_COEF0: [0.1, 0.2, 0.30000000000000004, 0.4, 0.5, 0.6, 0.7000000000000001, 0.8, 0.9]
+HYPER_PARAMETER_GAMMA: ['scale', 'auto']
+HYPER_PARAMETER_KERNEL: ['linear', 'poly', 'rbf', 'sigmoid']
+HYPER_PARAMETER_OPTIMIZATION_CV: 10
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+INPUT_EVALUATION_FILE: ../data/preprocessed/difference_preprocessed_evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/preprocessed/difference_preprocessed_training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: svm
+OUTPUT_MODEL: ../data/models/svm_model_09_05_2022-15_20_52.pkl
+OUTPUT_RESULTS: ../data/results/svm_model_09_05_2022-15_20_52.txt
+RANDOM_SEED: 42
+TIMESTAMP: 09_05_2022-15_20_52
+VERBOSITY: 2
+evaluation_accuracy: 0.8200757575757576
+evaluation_confusion_matrix: True operational=1115, True bankrupt=35, False operational=205, False bankrupt=9
+parameters: {'classification__C': [0.2, 0.4, 0.6000000000000001, 0.8, 1.0, 1.2, 1.4000000000000001, 1.6, 1.8], 'classification__kernel': ['linear', 'poly', 'rbf', 'sigmoid'], 'classification__gamma': ['scale', 'auto'], 'classification__coef0': [0.1, 0.2, 0.30000000000000004, 0.4, 0.5, 0.6, 0.7000000000000001, 0.8, 0.9]}
+training_accuracy: 0.8914642494274053
+training_confusion_matrix: True operational=4553, True bankrupt=162, False operational=726, False bankrupt=14
