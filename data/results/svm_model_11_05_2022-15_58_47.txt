@@ -1,0 +1,27 @@
+HYPER_PARAMETER_C: [0.2, 0.4, 0.6000000000000001, 0.8, 1.0, 1.2, 1.4000000000000001]
+HYPER_PARAMETER_CLASS_WEIGHT: balanced
+HYPER_PARAMETER_GAMMA: ['scale', 'auto']
+HYPER_PARAMETER_KERNEL: ['linear', 'poly', 'rbf']
+HYPER_PARAMETER_K_FEATURES: [40, 50, 60, 70, 80]
+HYPER_PARAMETER_OPTIMIZATION_BETA: 2
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_SCORE_FUNC: [<function chi2 at 0x7f958eca45e0>, <function f_classif at 0x7f958eca44c0>]
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: svm
+OUTPUT_MODEL: ../data/models/svm_model_11_05_2022-15_58_47.pkl
+OUTPUT_RESULTS: ../data/results/svm_model_11_05_2022-15_58_47.txt
+RANDOM_SEED: 42
+TIMESTAMP: 11_05_2022-15_58_47
+VERBOSITY: 3
+best_parameters: {'classification__C': 1.4000000000000001, 'classification__gamma': 'scale', 'classification__kernel': 'poly', 'selection__k': 70, 'selection__score_func': <function f_classif at 0x7f958eca44c0>}
+evaluation_accuracy: 0.796969696969697
+evaluation_classification_report: {'Operational': {'precision': 0.9890480202190396, 'recall': 0.8893939393939394, 'f1-score': 0.936577582768249, 'support': 1320}, 'Bankrupt': {'precision': 0.1751412429378531, 'recall': 0.7045454545454546, 'f1-score': 0.28054298642533937, 'support': 44}, 'accuracy': 0.8834310850439883, 'macro avg': {'precision': 0.5820946315784463, 'recall': 0.796969696969697, 'f1-score': 0.6085602845967941, 'support': 1364}, 'weighted avg': {'precision': 0.9627929628873884, 'recall': 0.8834310850439883, 'f1-score': 0.9154151764346067, 'support': 1364}}
+evaluation_confusion_matrix: True operational=1174, True bankrupt=31, False operational=146, False bankrupt=13
+evaluation_f_beta_score: 0.43909348441926344
+parameters: {'selection__k': [40, 50, 60, 70, 80], 'selection__score_func': [<function chi2 at 0x7f958eca45e0>, <function f_classif at 0x7f958eca44c0>], 'classification__C': [0.2, 0.4, 0.6000000000000001, 0.8, 1.0, 1.2, 1.4000000000000001], 'classification__kernel': ['linear', 'poly', 'rbf'], 'classification__gamma': ['scale', 'auto']}
+training_accuracy: 0.9138164295923814
+training_classification_report: {'Operational': {'precision': 0.9972757753562448, 'recall': 0.9014964955483993, 'f1-score': 0.9469704507014227, 'support': 5279}, 'Bankrupt': {'precision': 0.23865300146412885, 'recall': 0.9261363636363636, 'f1-score': 0.37951105937136204, 'support': 176}, 'accuracy': 0.9022914757103575, 'macro avg': {'precision': 0.6179643884101869, 'recall': 0.9138164295923814, 'f1-score': 0.6632407550363923, 'support': 5455}, 'weighted avg': {'precision': 0.9727995868676999, 'recall': 0.9022914757103575, 'f1-score': 0.9286619533826159, 'support': 5455}}
+training_confusion_matrix: True operational=4759, True bankrupt=163, False operational=520, False bankrupt=13
+training_f_beta_score: 0.5875991348233598
