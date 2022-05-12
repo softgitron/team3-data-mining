@@ -1,0 +1,25 @@
+HYPER_PARAMETER_ALPHA: [0.1, 0.01, 0.001, 0.0001, 1e-05, 1e-06]
+HYPER_PARAMETER_HIDDEN_LAYER_SIZES: [(100,)]
+HYPER_PARAMETER_K_FEATURES: [30, 40, 50, 60, 70, 80]
+HYPER_PARAMETER_OPTIMIZATION_BETA: 2
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_SCORE_FUNC: [<function chi2 at 0x7fa25811a3a0>, <function f_classif at 0x7fa25811a280>]
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: multi_layer_perceptron
+OUTPUT_MODEL: ../data/models/multi_layer_perceptron_model_11_05_2022-16_42_48.pkl
+OUTPUT_RESULTS: ../data/results/multi_layer_perceptron_model_11_05_2022-16_42_48.txt
+RANDOM_SEED: 42
+TIMESTAMP: 11_05_2022-16_42_48
+VERBOSITY: 3
+best_parameters: {'classification__alpha': 1e-06, 'classification__hidden_layer_sizes': (100,), 'selection__k': 40, 'selection__score_func': <function f_classif at 0x7fa25811a280>}
+evaluation_accuracy: 0.8037878787878787
+evaluation_classification_report: {'Operational': {'precision': 0.989778534923339, 'recall': 0.8803030303030303, 'f1-score': 0.9318364073777065, 'support': 1320}, 'Bankrupt': {'precision': 0.16842105263157894, 'recall': 0.7272727272727273, 'f1-score': 0.27350427350427353, 'support': 44}, 'accuracy': 0.875366568914956, 'macro avg': {'precision': 0.579099793777459, 'recall': 0.8037878787878787, 'f1-score': 0.60267034044099, 'support': 1364}, 'weighted avg': {'precision': 0.963283132268766, 'recall': 0.875366568914956, 'f1-score': 0.9105998869301763, 'support': 1364}}
+evaluation_confusion_matrix: True operational=1162, True bankrupt=32, False operational=158, False bankrupt=12
+evaluation_f_beta_score: 0.4371584699453551
+parameters: {'selection__k': [30, 40, 50, 60, 70, 80], 'selection__score_func': [<function chi2 at 0x7fa25811a3a0>, <function f_classif at 0x7fa25811a280>], 'classification__hidden_layer_sizes': [(100,)], 'classification__alpha': [0.1, 0.01, 0.001, 0.0001, 1e-05, 1e-06]}
+training_accuracy: 0.8827547831028604
+training_classification_report: {'Operational': {'precision': 0.9953419436798645, 'recall': 0.8905095662057207, 'f1-score': 0.9400119976004798, 'support': 5279}, 'Bankrupt': {'precision': 0.2103825136612022, 'recall': 0.875, 'f1-score': 0.33920704845814986, 'support': 176}, 'accuracy': 0.8900091659028414, 'macro avg': {'precision': 0.6028622286705334, 'recall': 0.8827547831028604, 'f1-score': 0.6396095230293148, 'support': 5455}, 'weighted avg': {'precision': 0.9700160298974109, 'recall': 0.8900091659028414, 'f1-score': 0.9206276399379593, 'support': 5455}}
+training_confusion_matrix: True operational=4701, True bankrupt=154, False operational=578, False bankrupt=22
+training_f_beta_score: 0.5362116991643454
