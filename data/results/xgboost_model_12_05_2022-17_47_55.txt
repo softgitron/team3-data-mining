@@ -1,0 +1,24 @@
+CROSS_VALIDATION_CV: 5
+HYPER_PARAMETER_CLASS_WEIGHT: balanced
+HYPER_PARAMETER_OPTIMIZATION_BETA: 2
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: xgboost
+OUTPUT_MODEL: ../data/models/xgboost_model_12_05_2022-17_47_55.pkl
+OUTPUT_RESULTS: ../data/results/xgboost_model_12_05_2022-17_47_55.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+TIMESTAMP: 12_05_2022-17_47_55
+evaluation_accuracy: 0.7734848484848484
+evaluation_confusion_matrix: True operational=1232, True bankrupt=27, False operational=88, False bankrupt=17
+feature_important: {'f0': 109.58001708984375, 'f1': 21.624542236328125, 'f2': 15.749852180480957, 'f3': 7.904501438140869, 'f4': 11.610383033752441, 'f5': 11.372520446777344, 'f6': 12.085987091064453, 'f7': 18.730512619018555, 'f8': 13.879497528076172, 'f9': 11.162727355957031}
+keys: ['f0', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9']
+metrics: ['logloss', 'rmse']
+parameters: {'clasification__n_estimators': range(25, 45, 10)}
+training_accuracy: 0.9736708699994834
+training_confusion_matrix: True operational=5091, True bankrupt=173, False operational=188, False bankrupt=3
+yy: [109.58001708984375, 21.624542236328125, 15.749852180480957, 7.904501438140869, 11.610383033752441, 11.372520446777344, 12.085987091064453, 18.730512619018555, 13.879497528076172, 11.162727355957031]
+Best model: Acc. Score = 0.486471, with parameters {'clasification__n_estimators': 25}
