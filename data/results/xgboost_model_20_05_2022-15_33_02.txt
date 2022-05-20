@@ -1,0 +1,24 @@
+CROSS_VALIDATION_CV: 5
+HYPER_PARAMETER_CLASS_WEIGHT: balanced
+HYPER_PARAMETER_OPTIMIZATION_BETA: 2
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: xgboost
+OUTPUT_MODEL: ../data/models/xgboost_model_20_05_2022-15_33_02.pkl
+OUTPUT_RESULTS: ../data/results/xgboost_model_20_05_2022-15_33_02.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+TIMESTAMP: 20_05_2022-15_33_02
+evaluation_accuracy: 0.7821969696969697
+evaluation_confusion_matrix: True operational=1195, True bankrupt=29, False operational=125, False bankrupt=15
+feature_important: {'f0': 259.03753662109375, 'f1': 47.23134994506836, 'f2': 23.99347496032715, 'f3': 13.129396438598633, 'f4': 16.91267204284668, 'f5': 19.364234924316406, 'f6': 45.05959701538086, 'f7': 12.970353126525879, 'f8': 11.281243324279785, 'f9': 11.04594898223877, 'f10': 11.484067916870117, 'f11': 3.662355899810791, 'f12': 14.43491268157959, 'f13': 14.828337669372559, 'f14': 23.65195655822754, 'f15': 17.883113861083984, 'f16': 22.130504608154297, 'f17': 18.78519630432129, 'f18': 31.55034637451172, 'f19': 29.220502853393555, 'f20': 15.323838233947754, 'f21': 44.98016357421875}
+keys: ['f0', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 'f10', 'f11', 'f12', 'f13', 'f14', 'f15', 'f16', 'f17', 'f18', 'f19', 'f20', 'f21']
+metrics: ['logloss', 'rmse']
+parameters: {'clasification__learning_rate': [0.3], 'clasification__n_estimators': [15], 'clasification__max_leaves': [25], 'clasification__max_depth': [6], 'selection__k': [30], 'selection__score_func': [<function f_classif at 0x00000238E9B15C10>], 'pca__n_components': [22], 'smote__k_neighbors': [5]}
+training_accuracy: 0.9758476984277324
+training_confusion_matrix: True operational=5024, True bankrupt=176, False operational=255, False bankrupt=0
+yy: [259.03753662109375, 47.23134994506836, 23.99347496032715, 13.129396438598633, 16.91267204284668, 19.364234924316406, 45.05959701538086, 12.970353126525879, 11.281243324279785, 11.04594898223877, 11.484067916870117, 3.662355899810791, 14.43491268157959, 14.828337669372559, 23.65195655822754, 17.883113861083984, 22.130504608154297, 18.78519630432129, 31.55034637451172, 29.220502853393555, 15.323838233947754, 44.98016357421875]
+Best model: Acc. Score = 0.477276, with parameters {'clasification__learning_rate': 0.3, 'clasification__max_depth': 6, 'clasification__max_leaves': 25, 'clasification__n_estimators': 15, 'pca__n_components': 22, 'selection__k': 30, 'selection__score_func': <function f_classif at 0x00000238E9B15C10>, 'smote__k_neighbors': 5}
