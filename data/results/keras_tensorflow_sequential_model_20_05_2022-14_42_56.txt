@@ -1,0 +1,65 @@
+CROSS_VALIDATION_CV: 5
+EVALUATION_FILES: ['../data/original/evaluation_dataset.csv', '..\\data\\preprocessed\\difference_preprocessed_evaluation_dataset.csv', '..\\data\\preprocessed\\ole_RemoveOutliers_and_preprocessing_pipe_evaluation_dataset.csv']
+FILE_N: 0
+HYPER_PARAMETER_BATCH_NUMBER: [20, 50, 80, 110, 140]
+HYPER_PARAMETER_CLASIFIER_METRICS: ['accuracy']
+HYPER_PARAMETER_CLASIFIER_OPTIMIZERS: ['rmsprop', 'adam', 'adagrad']
+HYPER_PARAMETER_DROPUT: [0, 0.1, 0.2, 0.3]
+HYPER_PARAMETER_EPOCHS: [10, 20, 40, 60]
+HYPER_PARAMETER_KERNEL_INITIALIZER: ['glorot_uniform', 'normal', 'uniform']
+HYPER_PARAMETER_K_FEATURES: [30, 40, 50, 60, 70, 80]
+HYPER_PARAMETER_LAYERS_N: [20, 30, 40, 50, 60, 70, 80]
+HYPER_PARAMETER_OPTIMIZATION_BETA: 2
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+HYPER_PARAMETER_SCORE_FUNC: [<function chi2 at 0x000001FB9B471280>, <function f_classif at 0x000001FB9B471160>]
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: keras_tensorflow_sequential
+OUTPUT_MODEL: ../data/models/keras_tensorflow_sequential_keras_model_20_05_2022-14_42_56.pkl
+OUTPUT_MODEL_ARCHITECTURE_RESULTS: ../img/keras_tensorflow_sequential_model_20_05_2022-14_42_56.png
+OUTPUT_MODEL_FOLDER: ../data/models/keras_models
+OUTPUT_RESULTS: ../data/results/keras_tensorflow_sequential_model_20_05_2022-14_42_56.txt
+RANDOM_SEED: 42
+TIMESTAMP: 20_05_2022-14_42_56
+TRAINING_FILES: ['../data/original/training_dataset.csv', '..\\data\\preprocessed\\difference_preprocessed_training_dataset.csv', '..\\data\\preprocessed\\ole_RemoveOutliers_and_preprocessing_pipe_training_dataset.csv']
+best_conf: 0.52
+confidence: 0.52
+current_variables: ['Activation', 'Add', 'BatchNormalization', 'CROSS_VALIDATION_CV', 'Dense', 'Dropout', 'EVALUATION_FILES', 'FILE_N', 'Flatten', 'GridSearchCV', 'HYPER_PARAMETER_BATCH_NUMBER', 'HYPER_PARAMETER_CLASIFIER_METRICS', 'HYPER_PARAMETER_CLASIFIER_OPTIMIZERS', 'HYPER_PARAMETER_DROPUT', 'HYPER_PARAMETER_EPOCHS', 'HYPER_PARAMETER_KERNEL_INITIALIZER', 'HYPER_PARAMETER_K_FEATURES', 'HYPER_PARAMETER_LAYERS_N', 'HYPER_PARAMETER_OPTIMIZATION_BETA', 'HYPER_PARAMETER_OPTIMIZATION_CV', 'HYPER_PARAMETER_OPTIMIZATION_SCORING', 'HYPER_PARAMETER_SCORE_FUNC', 'INPUT_EVALUATION_FILE', 'INPUT_TRAINING_FILE', 'Image', 'In', 'Input', 'KerasClassifier', 'KerasRegressor', 'LABELS', 'LogisticRegression', 'METHOD_NAME', 'MLPClassifier', 'MaxPooling2D', 'MinMaxScaler', 'Model', 'OUTPUT_MODEL', 'OUTPUT_MODEL_ARCHITECTURE_RESULTS', 'OUTPUT_MODEL_FOLDER', 'OUTPUT_RESULTS', 'Out', 'Pipeline', 'RANDOM_SEED', 'RMSLE', 'SMOTE', 'SelectKBest', 'SeparableConv2D', 'Sequential', 'StandardScaler', 'StratifiedKFold', 'TIMESTAMP', 'TRAINING_FILES', 'TimeDistributed', 'X_train', 'X_train_', '_', '_5', '_7', '__', '___', '__builtin__', '__builtins__', '__name__', '_dh', '_i', '_i10', '_i11', '_i12', '_i13', '_i14', '_i15', '_i16', '_i17', '_i18', '_i19', '_i20', '_i21', '_i22', '_i23', '_i24', '_i25', '_i3', '_i4', '_i5', '_i6', '_i7', '_i8', '_i9', '_ih', '_ii', '_iii', '_oh', 'accuracy_score', 'average_precision_score', 'balanced_accuracy_score', 'best_conf', 'chi2', 'classification_report', 'clf', 'confidence', 'confidences', 'confusion_matrix', 'create_model', 'cross_val_score', 'current_variables', 'custom_scorer', 'cv2', 'display', 'environment_variables', 'evaluation_dataset', 'evaluation_features', 'evaluation_targets', 'exit', 'f1_score', 'f_classif', 'fbeta_score', 'feature_selection', 'file', 'get_ipython', 'graphviz', 'grid', 'handle', 'im', 'imbpipeline', 'input_layer', 'keras_model_for_sklearn', 'layer', 'layers', 'log', 'make_scorer', 'max_acc', 'mean_squared_log_error', 'merge', 'min_max_scaler', 'model_', 'model_from_grid', 'models', 'np', 'numpy', 'os', 'output_parameters', 'param_grid', 'pd', 'pickle', 'pipeline', 'plot_model', 'plot_tf', 'plt', 'precision_recall_curve', 'precision_score', 'prev_layer', 'quit', 'recall_score', 'results_string', 'roc_auc_score', 'roc_curve', 'scaler', 'smote', 'talos', 'tensorflow', 'test_conf_matrix', 'time', 'training_confusion_matrix', 'training_dataset', 'training_features', 'training_targets', 'variable', 'variable_value', 'y_train']
+max_acc: 0.8409090909090909
+param_grid: {'clf__optimizer': ['adam'], 'clf__epochs': [10], 'clf__dropout': [0.2], 'clf__layers_n': [64], 'clf__kernel_initializer': ['uniform'], 'clf__metrics': ['accuracy'], 'selection__k': [30], 'selection__score_func': [<function chi2 at 0x000001FB9B471280>]}
+results_string: CROSS_VALIDATION_CV: 5
+EVALUATION_FILES: ['../data/original/evaluation_dataset.csv', '..\\data\\preprocessed\\difference_preprocessed_evaluation_dataset.csv', '..\\data\\preprocessed\\ole_RemoveOutliers_and_preprocessing_pipe_evaluation_dataset.csv']
+FILE_N: 0
+HYPER_PARAMETER_BATCH_NUMBER: [20, 50, 80, 110, 140]
+HYPER_PARAMETER_CLASIFIER_METRICS: ['accuracy']
+HYPER_PARAMETER_CLASIFIER_OPTIMIZERS: ['rmsprop', 'adam', 'adagrad']
+HYPER_PARAMETER_DROPUT: [0, 0.1, 0.2, 0.3]
+HYPER_PARAMETER_EPOCHS: [10, 20, 40, 60]
+HYPER_PARAMETER_KERNEL_INITIALIZER: ['glorot_uniform', 'normal', 'uniform']
+HYPER_PARAMETER_K_FEATURES: [30, 40, 50, 60, 70, 80]
+HYPER_PARAMETER_LAYERS_N: [20, 30, 40, 50, 60, 70, 80]
+HYPER_PARAMETER_OPTIMIZATION_BETA: 2
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+HYPER_PARAMETER_SCORE_FUNC: [<function chi2 at 0x000001FB9B471280>, <function f_classif at 0x000001FB9B471160>]
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: keras_tensorflow_sequential
+OUTPUT_MODEL: ../data/models/keras_tensorflow_sequential_keras_model_20_05_2022-14_42_56.pkl
+OUTPUT_MODEL_ARCHITECTURE_RESULTS: ../img/keras_tensorflow_sequential_model_20_05_2022-14_42_56.png
+OUTPUT_MODEL_FOLDER: ../data/models/keras_models
+OUTPUT_RESULTS: ../data/results/keras_tensorflow_sequential_model_20_05_2022-14_42_56.txt
+RANDOM_SEED: 42
+TIMESTAMP: 20_05_2022-14_42_56
+TRAINING_FILES: ['../data/original/training_dataset.csv', '..\\data\\preprocessed\\difference_preprocessed_training_dataset.csv', '..\\data\\preprocessed\\ole_RemoveOutliers_and_preprocessing_pipe_training_dataset.csv']
+best_conf: 0.52
+confidence: 0.52
+current_variables: ['Activation', 'Add', 'BatchNormalization', 'CROSS_VALIDATION_CV', 'Dense', 'Dropout', 'EVALUATION_FILES', 'FILE_N', 'Flatten', 'GridSearchCV', 'HYPER_PARAMETER_BATCH_NUMBER', 'HYPER_PARAMETER_CLASIFIER_METRICS', 'HYPER_PARAMETER_CLASIFIER_OPTIMIZERS', 'HYPER_PARAMETER_DROPUT', 'HYPER_PARAMETER_EPOCHS', 'HYPER_PARAMETER_KERNEL_INITIALIZER', 'HYPER_PARAMETER_K_FEATURES', 'HYPER_PARAMETER_LAYERS_N', 'HYPER_PARAMETER_OPTIMIZATION_BETA', 'HYPER_PARAMETER_OPTIMIZATION_CV', 'HYPER_PARAMETER_OPTIMIZATION_SCORING', 'HYPER_PARAMETER_SCORE_FUNC', 'INPUT_EVALUATION_FILE', 'INPUT_TRAINING_FILE', 'Image', 'In', 'Input', 'KerasClassifier', 'KerasRegressor', 'LABELS', 'LogisticRegression', 'METHOD_NAME', 'MLPClassifier', 'MaxPooling2D', 'MinMaxScaler', 'Model', 'OUTPUT_MODEL', 'OUTPUT_MODEL_ARCHITECTURE_RESULTS', 'OUTPUT_MODEL_FOLDER', 'OUTPUT_RESULTS', 'Out', 'Pipeline', 'RANDOM_SEED', 'RMSLE', 'SMOTE', 'SelectKBest', 'SeparableConv2D', 'Sequential', 'StandardScaler', 'StratifiedKFold', 'TIMESTAMP', 'TRAINING_FILES', 'TimeDistributed', 'X_train', 'X_train_', '_', '_5', '_7', '__', '___', '__builtin__', '__builtins__', '__name__', '_dh', '_i', '_i10', '_i11', '_i12', '_i13', '_i14', '_i15', '_i16', '_i17', '_i18', '_i19', '_i20', '_i21', '_i22', '_i23', '_i24', '_i25', '_i3', '_i4', '_i5', '_i6', '_i7', '_i8', '_i9', '_ih', '_ii', '_iii', '_oh', 'accuracy_score', 'average_precision_score', 'balanced_accuracy_score', 'best_conf', 'chi2', 'classification_report', 'clf', 'confidence', 'confidences', 'confusion_matrix', 'create_model', 'cross_val_score', 'current_variables', 'custom_scorer', 'cv2', 'display', 'environment_variables', 'evaluation_dataset', 'evaluation_features', 'evaluation_targets', 'exit', 'f1_score', 'f_classif', 'fbeta_score', 'feature_selection', 'file', 'get_ipython', 'graphviz', 'grid', 'handle', 'im', 'imbpipeline', 'input_layer', 'keras_model_for_sklearn', 'layer', 'layers', 'log', 'make_scorer', 'max_acc', 'mean_squared_log_error', 'merge', 'min_max_scaler', 'model_', 'model_from_grid', 'models', 'np', 'numpy', 'os', 'output_parameters', 'param_grid', 'pd', 'pickle', 'pipeline', 'plot_model', 'plot_tf', 'plt', 'precision_recall_curve', 'precision_score', 'prev_layer', 'quit', 'recall_score', 'results_string', 'roc_auc_score', 'roc_curve', 'scaler', 'smote', 'talos', 'tensorflow', 'test_conf_matrix', 'time', 'training_confusion_matrix', 'training_dataset', 'training_features', 'training_targets', 'variable', 'variable_value', 'y_train']
+max_acc: 0.8409090909090909
+param_grid: {'clf__optimizer': ['adam'], 'clf__epochs': [10], 'clf__dropout': [0.2], 'clf__layers_n': [64], 'clf__kernel_initializer': ['uniform'], 'clf__metrics': ['accuracy'], 'selection__k': [30], 'selection__score_func': [<function chi2 at 0x000001FB9B471280>]}
+
+variable: variable
+variable_value: variable

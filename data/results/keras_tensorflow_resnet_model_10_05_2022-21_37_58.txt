@@ -1,0 +1,47 @@
+CROSS_VALIDATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: keras_tensorflow_resnet
+OUTPUT_MODEL: ../data/models/keras_tensorflow_resnet_model_10_05_2022-21_37_58.pkl
+OUTPUT_MODEL_ARCHITECTURE_RESULTS: ../img/keras_tensorflow_resnet_model_10_05_2022-21_37_58.png
+OUTPUT_MODEL_FOLDER: ../data/models/keras_models
+OUTPUT_RESULTS: ../data/results/keras_tensorflow_resnet_model_10_05_2022-21_37_58.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+TIMESTAMP: 10_05_2022-21_37_58
+current_variables: ['CROSS_VALIDATION_CV', 'EarlyStopping', 'HYPER_PARAMETER_OPTIMIZATION_CV', 'HYPER_PARAMETER_OPTIMIZATION_SCORING', 'INPUT_EVALUATION_FILE', 'INPUT_TRAINING_FILE', 'Image', 'In', 'LABELS', 'METHOD_NAME', 'ModelCheckpoint', 'OUTPUT_MODEL', 'OUTPUT_MODEL_ARCHITECTURE_RESULTS', 'OUTPUT_MODEL_FOLDER', 'OUTPUT_RESULTS', 'OneHotEncoder', 'Out', 'PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION', 'RANDOM_SEED', 'RMSLE', 'ResNet', 'ResNet2', 'TIMESTAMP', '__builtin__', '__builtins__', '__name__', '_dh', '_i', '_i25', '_i26', '_i27', '_i28', '_i29', '_i30', '_i31', '_i32', '_i33', '_i34', '_i35', '_i36', '_i37', '_i38', '_i39', '_i40', '_i41', '_i42', '_i43', '_i44', '_i45', '_i46', '_i47', '_i48', '_i49', '_i50', '_ih', '_ii', '_iii', '_oh', 'accuracy_score', 'balanced_accuracy_score', 'classification_report', 'confusion_matrix', 'confusion_matrix_to_string', 'current_variables', 'cv2', 'display', 'environment_variables', 'estimator', 'evaluation_accuracy', 'evaluation_confusion_matrix', 'evaluation_dataset', 'evaluation_estimates', 'evaluation_features', 'evaluation_targets', 'exit', 'f1_score', 'file', 'full_conf_mat', 'get_ipython', 'graphviz', 'history', 'input_n', 'loss', 'make_scorer', 'mean_squared_log_error', 'metrics', 'model', 'np', 'numpy', 'oh_enc', 'optimizer', 'os', 'pd', 'plot_model', 'plt', 'print_model_acc', 'quit', 'recall_score', 'results_string', 'roc_curve', 'simple_dense_model', 'talos', 'target_test', 'target_test_OH', 'target_train', 'target_train_OH', 'tensorflow', 'test_conf_matrix', 'time', 'train_conf_matrix', 'train_fit_model', 'training_accuracy', 'training_confusion_matrix', 'training_dataset', 'training_estimates', 'training_features', 'training_targets', 'variable', 'variable_value', 'y_pred_test', 'y_pred_train']
+evaluation_accuracy: 0.5174242424242425
+evaluation_confusion_matrix: True operational=1306, True bankrupt=2, False operational=14, False bankrupt=42
+input_n: 95
+loss: binary_crossentropy
+metrics: ['accuracy', 'MeanSquaredError', 'AUC', 'RootMeanSquaredError']
+optimizer: adam
+results_string: CROSS_VALIDATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: keras_tensorflow_resnet
+OUTPUT_MODEL: ../data/models/keras_tensorflow_resnet_model_10_05_2022-21_37_58.pkl
+OUTPUT_MODEL_ARCHITECTURE_RESULTS: ../img/keras_tensorflow_resnet_model_10_05_2022-21_37_58.png
+OUTPUT_MODEL_FOLDER: ../data/models/keras_models
+OUTPUT_RESULTS: ../data/results/keras_tensorflow_resnet_model_10_05_2022-21_37_58.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+TIMESTAMP: 10_05_2022-21_37_58
+current_variables: ['CROSS_VALIDATION_CV', 'EarlyStopping', 'HYPER_PARAMETER_OPTIMIZATION_CV', 'HYPER_PARAMETER_OPTIMIZATION_SCORING', 'INPUT_EVALUATION_FILE', 'INPUT_TRAINING_FILE', 'Image', 'In', 'LABELS', 'METHOD_NAME', 'ModelCheckpoint', 'OUTPUT_MODEL', 'OUTPUT_MODEL_ARCHITECTURE_RESULTS', 'OUTPUT_MODEL_FOLDER', 'OUTPUT_RESULTS', 'OneHotEncoder', 'Out', 'PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION', 'RANDOM_SEED', 'RMSLE', 'ResNet', 'ResNet2', 'TIMESTAMP', '__builtin__', '__builtins__', '__name__', '_dh', '_i', '_i25', '_i26', '_i27', '_i28', '_i29', '_i30', '_i31', '_i32', '_i33', '_i34', '_i35', '_i36', '_i37', '_i38', '_i39', '_i40', '_i41', '_i42', '_i43', '_i44', '_i45', '_i46', '_i47', '_i48', '_i49', '_i50', '_ih', '_ii', '_iii', '_oh', 'accuracy_score', 'balanced_accuracy_score', 'classification_report', 'confusion_matrix', 'confusion_matrix_to_string', 'current_variables', 'cv2', 'display', 'environment_variables', 'estimator', 'evaluation_accuracy', 'evaluation_confusion_matrix', 'evaluation_dataset', 'evaluation_estimates', 'evaluation_features', 'evaluation_targets', 'exit', 'f1_score', 'file', 'full_conf_mat', 'get_ipython', 'graphviz', 'history', 'input_n', 'loss', 'make_scorer', 'mean_squared_log_error', 'metrics', 'model', 'np', 'numpy', 'oh_enc', 'optimizer', 'os', 'pd', 'plot_model', 'plt', 'print_model_acc', 'quit', 'recall_score', 'results_string', 'roc_curve', 'simple_dense_model', 'talos', 'target_test', 'target_test_OH', 'target_train', 'target_train_OH', 'tensorflow', 'test_conf_matrix', 'time', 'train_conf_matrix', 'train_fit_model', 'training_accuracy', 'training_confusion_matrix', 'training_dataset', 'training_estimates', 'training_features', 'training_targets', 'variable', 'variable_value', 'y_pred_test', 'y_pred_train']
+evaluation_accuracy: 0.5174242424242425
+evaluation_confusion_matrix: True operational=1306, True bankrupt=2, False operational=14, False bankrupt=42
+input_n: 95
+loss: binary_crossentropy
+metrics: ['accuracy', 'MeanSquaredError', 'AUC', 'RootMeanSquaredError']
+optimizer: adam
+
+training_accuracy: 0.6557764254593673
+training_confusion_matrix: True operational=5274, True bankrupt=55, False operational=5, False bankrupt=121
+variable: variable
+variable_value: variable

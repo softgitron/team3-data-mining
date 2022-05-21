@@ -1,0 +1,21 @@
+CROSS_VALIDATION_CV: 5
+HYPER_PARAMETER_CLASS_WEIGHT: balanced
+HYPER_PARAMETER_GAMMA: ['scale']
+HYPER_PARAMETER_KERNEL: ['rbf']
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: xgboost
+OUTPUT_MODEL: ../data/models/xgboost_model_09_05_2022-22_05_37.pkl
+OUTPUT_RESULTS: ../data/results/xgboost_model_09_05_2022-22_05_37.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+TIMESTAMP: 09_05_2022-22_05_37
+evaluation_accuracy: 0.7465909090909091
+evaluation_confusion_matrix: True operational=1251, True bankrupt=24, False operational=69, False bankrupt=20
+parameters: {'clasification__learning_rate': [0.3], 'clasification__n_estimators': range(25, 45, 5), 'clasification__max_depth': [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], 'clasification__max_leaves': [2, 7, 12, 17, 22, 27]}
+training_accuracy: 0.9974426974805835
+training_confusion_matrix: True operational=5252, True bankrupt=176, False operational=27, False bankrupt=0
+Best model: Acc. Score = 0.945555, with parameters {'clasification__learning_rate': 0.3, 'clasification__max_depth': 19, 'clasification__max_leaves': 2, 'clasification__n_estimators': 40}

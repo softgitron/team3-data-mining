@@ -1,0 +1,25 @@
+CROSS_VALIDATION_CV: 5
+EVALUATION_FILES: ['../data/original/evaluation_dataset.csv', '..\\data\\preprocessed\\difference_preprocessed_evaluation_dataset.csv', '..\\data\\preprocessed\\ole_RemoveOutliers_and_preprocessing_pipe_evaluation_dataset.csv']
+FILE_N: 2
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+INPUT_EVALUATION_FILE: ..\data\preprocessed\ole_RemoveOutliers_and_preprocessing_pipe_evaluation_dataset.csv
+INPUT_TRAINING_FILE: ..\data\preprocessed\ole_RemoveOutliers_and_preprocessing_pipe_training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: keras_tensorflow_resnet
+OUTPUT_MODEL: ../data/models/keras_tensorflow_resnet_model_12_05_2022-18_15_49.pkl
+OUTPUT_MODEL_ARCHITECTURE_RESULTS: ../img/keras_tensorflow_resnet_model_12_05_2022-18_15_49.png
+OUTPUT_MODEL_FOLDER: ../data/models/keras_models
+OUTPUT_RESULTS: ../data/results/keras_tensorflow_resnet_model_12_05_2022-18_15_49.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+TIMESTAMP: 12_05_2022-18_15_49
+TRAINING_FILES: ['../data/original/training_dataset.csv', '..\\data\\preprocessed\\difference_preprocessed_training_dataset.csv', '..\\data\\preprocessed\\ole_RemoveOutliers_and_preprocessing_pipe_training_dataset.csv']
+evaluation_accuracy: 0.5212121212121212
+evaluation_confusion_matrix: True operational=1316, True bankrupt=2, False operational=4, False bankrupt=42
+input_n: 95
+loss: binary_crossentropy
+metrics: ['accuracy', 'MeanSquaredError', 'AUC', 'RootMeanSquaredError']
+optimizer: adam
+training_accuracy: 0.5398966301426504
+training_confusion_matrix: True operational=4836, True bankrupt=14, False operational=1, False bankrupt=161
