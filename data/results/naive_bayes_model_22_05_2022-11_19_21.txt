@@ -1,0 +1,30 @@
+HYPER_PARAMETER_K_FEATURES: [10, 20, 30, 40, 50, 60, 70]
+HYPER_PARAMETER_OPTIMIZATION_BETA: 2
+HYPER_PARAMETER_OPTIMIZATION_CV: 10
+HYPER_PARAMETER_SCORE_FUNC: [<function chi2 at 0x7f4e7f109f70>, <function f_classif at 0x7f4e7f109e50>, <function mutual_info_classif at 0x7f4e7f122a60>]
+HYPER_PARAMETER_VAR_SMOOTHING: [1e-09, 0.050000001, 0.100000001, 0.15000000100000002, 0.200000001, 0.250000001, 0.30000000100000007, 0.35000000100000006, 0.40000000100000005, 0.45000000100000004, 0.500000001, 0.550000001, 0.6000000010000001, 0.650000001, 0.700000001, 0.750000001, 0.800000001, 0.8500000010000001, 0.900000001, 0.950000001]
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: naive_bayes
+OUTPUT_MODEL: ../data/models/naive_bayes_model_22_05_2022-11_19_21.pkl
+OUTPUT_RESULTS: ../data/results/naive_bayes_model_22_05_2022-11_19_21.txt
+RANDOM_SEED: 42
+TIMESTAMP: 22_05_2022-11_19_21
+VERBOSITY: 3
+all_samples_count: 5455
+bankrupt_prior_propability: 0.03226397800183318
+bankrupt_samples_count: 176
+best_parameters: {'classification__var_smoothing': 0.050000001, 'selection__k': 40, 'selection__score_func': <function chi2 at 0x7f4e7f109f70>}
+evaluation_accuracy: 0.7776515151515151
+evaluation_classification_report: {'Operational': {'precision': 0.9869812855980472, 'recall': 0.918939393939394, 'f1-score': 0.9517457826598666, 'support': 1320}, 'Bankrupt': {'precision': 0.2074074074074074, 'recall': 0.6363636363636364, 'f1-score': 0.3128491620111732, 'support': 44}, 'accuracy': 0.9098240469208211, 'macro avg': {'precision': 0.5971943465027273, 'recall': 0.7776515151515151, 'f1-score': 0.6322974723355199, 'support': 1364}, 'weighted avg': {'precision': 0.9618337411402845, 'recall': 0.9098240469208211, 'f1-score': 0.9311362142518443, 'support': 1364}}
+evaluation_confusion_matrix: True operational=1213, True bankrupt=28, False operational=107, False bankrupt=16
+evaluation_f_beta_score: 0.45016077170418006
+operational_prior_propability: 0.9677360219981668
+operational_samples_count: 5279
+parameters: {'selection__k': [10, 20, 30, 40, 50, 60, 70], 'selection__score_func': [<function chi2 at 0x7f4e7f109f70>, <function f_classif at 0x7f4e7f109e50>, <function mutual_info_classif at 0x7f4e7f122a60>], 'classification__var_smoothing': [1e-09, 0.050000001, 0.100000001, 0.15000000100000002, 0.200000001, 0.250000001, 0.30000000100000007, 0.35000000100000006, 0.40000000100000005, 0.45000000100000004, 0.500000001, 0.550000001, 0.6000000010000001, 0.650000001, 0.700000001, 0.750000001, 0.800000001, 0.8500000010000001, 0.900000001, 0.950000001]}
+prior_propabilities: [0.9677360219981668, 0.03226397800183318]
+training_accuracy: 0.8115463930840896
+training_classification_report: {'Operational': {'precision': 0.9891194841829538, 'recall': 0.9299109679863611, 'f1-score': 0.9586018355789885, 'support': 5279}, 'Bankrupt': {'precision': 0.24796747967479674, 'recall': 0.6931818181818182, 'f1-score': 0.36526946107784436, 'support': 176}, 'accuracy': 0.9222731439046746, 'macro avg': {'precision': 0.6185434819288753, 'recall': 0.8115463930840896, 'f1-score': 0.6619356483284164, 'support': 5455}, 'weighted avg': {'precision': 0.9652069722134881, 'recall': 0.9222731439046746, 'f1-score': 0.939458572900308, 'support': 5455}}
+training_confusion_matrix: True operational=4909, True bankrupt=122, False operational=370, False bankrupt=54
+training_f_beta_score: 0.5100334448160535
