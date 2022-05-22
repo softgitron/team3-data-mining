@@ -1,0 +1,24 @@
+HYPER_PARAMETER_K_FEATURES: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85]
+HYPER_PARAMETER_N_RESTARTS_OPTIMIZER: [0, 1, 2]
+HYPER_PARAMETER_OPTIMIZATION_BETA: 2
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_SCORE_FUNC: [<function chi2 at 0x7fe6639c8940>]
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: gaussian_process
+OUTPUT_MODEL: ../data/models/gaussian_process_model_12_05_2022-22_55_31.pkl
+OUTPUT_RESULTS: ../data/results/gaussian_process_model_12_05_2022-22_55_31.txt
+RANDOM_SEED: 42
+TIMESTAMP: 12_05_2022-22_55_31
+VERBOSITY: 3
+best_parameters: {'classification__n_restarts_optimizer': 0, 'selection__k': 40, 'selection__score_func': <function chi2 at 0x7fe6639c8940>}
+evaluation_accuracy: 0.8276515151515151
+evaluation_classification_report: {'Operational': {'precision': 0.9914893617021276, 'recall': 0.8825757575757576, 'f1-score': 0.9338677354709419, 'support': 1320}, 'Bankrupt': {'precision': 0.17989417989417988, 'recall': 0.7727272727272727, 'f1-score': 0.2918454935622318, 'support': 44}, 'accuracy': 0.8790322580645161, 'macro avg': {'precision': 0.5856917707981537, 'recall': 0.8276515151515151, 'f1-score': 0.6128566145165868, 'support': 1364}, 'weighted avg': {'precision': 0.9653088719663875, 'recall': 0.8790322580645161, 'f1-score': 0.913157340570661, 'support': 1364}}
+evaluation_confusion_matrix: True operational=1165, True bankrupt=34, False operational=155, False bankrupt=10
+evaluation_f_beta_score: 0.4657534246575343
+parameters: {'selection__k': [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85], 'selection__score_func': [<function chi2 at 0x7fe6639c8940>], 'classification__n_restarts_optimizer': [0, 1, 2]}
+training_accuracy: 0.888152456560299
+training_classification_report: {'Operational': {'precision': 0.9957609156422212, 'recall': 0.8899412767569616, 'f1-score': 0.9398819645893768, 'support': 5279}, 'Bankrupt': {'precision': 0.21166892808683854, 'recall': 0.8863636363636364, 'f1-score': 0.3417305585980285, 'support': 176}, 'accuracy': 0.8898258478460128, 'macro avg': {'precision': 0.6037149218645299, 'recall': 0.888152456560299, 'f1-score': 0.6408062615937027, 'support': 5455}, 'weighted avg': {'precision': 0.9704629890043208, 'recall': 0.8898258478460128, 'f1-score': 0.9205832207847063, 'support': 5455}}
+training_confusion_matrix: True operational=4698, True bankrupt=156, False operational=581, False bankrupt=20
+training_f_beta_score: 0.5412907702984039
