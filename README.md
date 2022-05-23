@@ -1,7 +1,7 @@
 # team3-data-mining
 
 
-###Group Number: 3
+### Group Number: 3
 Authors 
   - Ole Magnus Strand ID 1805599
   - Phillip Kolkmeier ID 1804601
