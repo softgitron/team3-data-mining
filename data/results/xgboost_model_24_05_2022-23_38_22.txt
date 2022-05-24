@@ -1,0 +1,27 @@
+CROSS_VALIDATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_BETA: 2
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: xgboost
+OUTPUT_MODEL: ../data/models/xgboost_model_24_05_2022-23_38_22.pkl
+OUTPUT_RESULTS: ../data/results/xgboost_model_24_05_2022-23_38_22.txt
+RANDOM_SEED: 42
+TIMESTAMP: 24_05_2022-23_38_22
+best_parameters: {'clasification__learning_rate': 0.3, 'clasification__max_depth': 6, 'clasification__max_leaves': 25, 'clasification__n_estimators': 15, 'pca__n_components': 22, 'selection__k': 30, 'selection__score_func': <function f_classif at 0x000002141606D310>, 'smote__k_neighbors': 5}
+evaluation_accuracy: 0.7821969696969697
+evaluation_classification_report: {'Operational': {'precision': 0.987603305785124, 'recall': 0.9053030303030303, 'f1-score': 0.9446640316205535, 'support': 1320}, 'Bankrupt': {'precision': 0.18831168831168832, 'recall': 0.6590909090909091, 'f1-score': 0.29292929292929293, 'support': 44}, 'accuracy': 0.8973607038123167, 'macro avg': {'precision': 0.5879574970484062, 'recall': 0.7821969696969697, 'f1-score': 0.6187966622749232, 'support': 1364}, 'weighted avg': {'precision': 0.9618197052214648, 'recall': 0.8973607038123167, 'f1-score': 0.9236403303724482, 'support': 1364}}
+evaluation_confusion_matrix: True operational=1195, True bankrupt=29, False operational=125, False bankrupt=15
+evaluation_f_beta_score: 0.43939393939393934
+feature_important: {'f0': 259.03753662109375, 'f1': 47.23134994506836, 'f2': 23.99347496032715, 'f3': 13.129396438598633, 'f4': 16.91267204284668, 'f5': 19.364234924316406, 'f6': 45.05959701538086, 'f7': 12.970353126525879, 'f8': 11.281243324279785, 'f9': 11.04594898223877, 'f10': 11.484067916870117, 'f11': 3.662355899810791, 'f12': 14.43491268157959, 'f13': 14.828337669372559, 'f14': 23.65195655822754, 'f15': 17.883113861083984, 'f16': 22.130504608154297, 'f17': 18.78519630432129, 'f18': 31.55034637451172, 'f19': 29.220502853393555, 'f20': 15.323838233947754, 'f21': 44.98016357421875}
+keys: ['f0', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 'f10', 'f11', 'f12', 'f13', 'f14', 'f15', 'f16', 'f17', 'f18', 'f19', 'f20', 'f21']
+metrics: ['logloss', 'rmse']
+parameters: {'clasification__learning_rate': [0.3], 'clasification__n_estimators': [15], 'clasification__max_leaves': [25], 'clasification__max_depth': [6], 'selection__k': [30], 'selection__score_func': [<function f_classif at 0x000002141606D310>], 'pca__n_components': [22], 'smote__k_neighbors': [5]}
+training_accuracy: 0.9758476984277324
+training_classification_report: {'Operational': {'precision': 1.0, 'recall': 0.951695396855465, 'f1-score': 0.9752499272056683, 'support': 5279}, 'Bankrupt': {'precision': 0.40835266821345706, 'recall': 1.0, 'f1-score': 0.5799011532125206, 'support': 176}, 'accuracy': 0.9532538955087076, 'macro avg': {'precision': 0.7041763341067285, 'recall': 0.9758476984277324, 'f1-score': 0.7775755402090945, 'support': 5455}, 'weighted avg': {'precision': 0.9809111035023956, 'recall': 0.9532538955087076, 'f1-score': 0.9624944030585016, 'support': 5455}}
+training_confusion_matrix: True operational=5024, True bankrupt=176, False operational=255, False bankrupt=0
+training_f_beta_score: 0.7753303964757708
+yy: [259.03753662109375, 47.23134994506836, 23.99347496032715, 13.129396438598633, 16.91267204284668, 19.364234924316406, 45.05959701538086, 12.970353126525879, 11.281243324279785, 11.04594898223877, 11.484067916870117, 3.662355899810791, 14.43491268157959, 14.828337669372559, 23.65195655822754, 17.883113861083984, 22.130504608154297, 18.78519630432129, 31.55034637451172, 29.220502853393555, 15.323838233947754, 44.98016357421875]
+Best model: Acc. Score = 0.477276, with parameters {'clasification__learning_rate': 0.3, 'clasification__max_depth': 6, 'clasification__max_leaves': 25, 'clasification__n_estimators': 15, 'pca__n_components': 22, 'selection__k': 30, 'selection__score_func': <function f_classif at 0x000002141606D310>, 'smote__k_neighbors': 5}
