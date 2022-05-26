@@ -1,0 +1,33 @@
+CROSS_VALIDATION_CV: 5
+EVALUATION_FILES: ['../data/original/evaluation_dataset.csv', '..\\data\\preprocessed\\difference_preprocessed_evaluation_dataset.csv', '..\\data\\preprocessed\\ole_RemoveOutliers_and_preprocessing_pipe_evaluation_dataset.csv']
+FILE_N: 1
+HYPER_PARAMETER_ALPHA: [0.1, 0.01, 0.001, 0.0001, 1e-05, 1e-06]
+HYPER_PARAMETER_BATCH_NUMBER: [20, 50, 80, 110, 140]
+HYPER_PARAMETER_CLASIFIER_METRICS: ['accuracy']
+HYPER_PARAMETER_CLASIFIER_OPTIMIZERS: ['rmsprop', 'adam', 'adagrad']
+HYPER_PARAMETER_DROPUT: [0, 0.1, 0.2, 0.3]
+HYPER_PARAMETER_EPOCHS: [10, 20, 40, 60]
+HYPER_PARAMETER_HIDDEN_LAYER_SIZES: [(100,)]
+HYPER_PARAMETER_KERNEL_INITIALIZER: ['glorot_uniform', 'normal', 'uniform']
+HYPER_PARAMETER_K_FEATURES: [20, 25, 30, 35, 40, 95]
+HYPER_PARAMETER_LAYERS_N: [20, 30, 40, 50, 60, 70, 80]
+HYPER_PARAMETER_OPTIMIZATION_BETA: 2
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+HYPER_PARAMETER_SCORE_FUNC: [<function chi2 at 0x0000017B1577CB80>, <function f_classif at 0x0000017B1577CA60>]
+INPUT_EVALUATION_FILE: ..\data\preprocessed\difference_preprocessed_evaluation_dataset.csv
+INPUT_TRAINING_FILE: ..\data\preprocessed\difference_preprocessed_training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: keras_tensorflow_resnet
+OUTPUT_MODEL: ../data/models/keras_tensorflow_resnet_keras_model_19_05_2022-14_04_17.pkl
+OUTPUT_MODEL_ARCHITECTURE_RESULTS: ../img/keras_tensorflow_resnet_model_19_05_2022-14_04_17.png
+OUTPUT_MODEL_FOLDER: ../data/models/keras_models
+OUTPUT_RESULTS: ../data/results/keras_tensorflow_resnet_model_19_05_2022-14_04_17.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+TIMESTAMP: 19_05_2022-14_04_17
+TRAINING_FILES: ['../data/original/training_dataset.csv', '..\\data\\preprocessed\\difference_preprocessed_training_dataset.csv', '..\\data\\preprocessed\\ole_RemoveOutliers_and_preprocessing_pipe_training_dataset.csv']
+best_conf: 0.4
+confidence: 0.4
+max_acc: 0.8625
+param_grid: {'clf__optimizer': ['adam'], 'clf__epochs': [10], 'clf__dropout': [0.2], 'clf__layers_n': [64], 'clf__kernel_initializer': ['uniform'], 'clf__metrics': ['accuracy'], 'selection__k': [30], 'selection__score_func': [<function chi2 at 0x0000017B1577CB80>]}

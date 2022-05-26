@@ -1,0 +1,24 @@
+CROSS_VALIDATION_CV: 5
+HYPER_PARAMETER_CLASS_WEIGHT: balanced
+HYPER_PARAMETER_OPTIMIZATION_BETA: 2
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: xgboost
+OUTPUT_MODEL: ../data/models/xgboost_model_12_05_2022-18_09_09.pkl
+OUTPUT_RESULTS: ../data/results/xgboost_model_12_05_2022-18_09_09.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+TIMESTAMP: 12_05_2022-18_09_09
+evaluation_accuracy: 0.7337121212121211
+evaluation_confusion_matrix: True operational=1247, True bankrupt=23, False operational=73, False bankrupt=21
+feature_important: {'f0': 10.252209663391113, 'f1': 15.543670654296875, 'f2': 11.737066268920898, 'f3': 18.572734832763672, 'f4': 35.90049743652344, 'f5': 6.013256072998047, 'f6': 6.468255043029785, 'f7': 5.947330951690674, 'f8': 23.543851852416992, 'f9': 8.643976211547852, 'f10': 7.51390266418457, 'f11': 15.031164169311523, 'f12': 9.873927116394043, 'f13': 9.186721801757812, 'f14': 12.42654037475586, 'f15': 25.985427856445312, 'f16': 127.08550262451172, 'f17': 24.77304458618164, 'f18': 23.424972534179688, 'f19': 10.712844848632812, 'f20': 44.75141143798828, 'f21': 25.884489059448242, 'f22': 13.199905395507812, 'f23': 18.14606475830078, 'f24': 18.848581314086914, 'f25': 14.905072212219238, 'f26': 12.664250373840332, 'f27': 13.855749130249023, 'f28': 12.869104385375977, 'f29': 9.780668258666992}
+keys: ['f0', 'f1', 'f2', 'f3', 'f4', 'f5', 'f6', 'f7', 'f8', 'f9', 'f10', 'f11', 'f12', 'f13', 'f14', 'f15', 'f16', 'f17', 'f18', 'f19', 'f20', 'f21', 'f22', 'f23', 'f24', 'f25', 'f26', 'f27', 'f28', 'f29']
+metrics: ['logloss', 'rmse']
+parameters: {'clasification__learning_rate': [0.3], 'clasification__n_estimators': range(15, 45, 10), 'clasification__max_leaves': [2, 4, 6], 'clasification__max_depth': [3, 6, 9], 'selection__k': [30, 40, 50, 60, 70, 80], 'selection__score_func': [<function chi2 at 0x7fe79e550c10>, <function f_classif at 0x7fe79e550af0>], 'pca__n_components': [30, 60, 90], 'smote__k_neighbors': [5, 10, 15]}
+training_accuracy: 0.988918355749195
+training_confusion_matrix: True operational=5162, True bankrupt=176, False operational=117, False bankrupt=0
+yy: [10.252209663391113, 15.543670654296875, 11.737066268920898, 18.572734832763672, 35.90049743652344, 6.013256072998047, 6.468255043029785, 5.947330951690674, 23.543851852416992, 8.643976211547852, 7.51390266418457, 15.031164169311523, 9.873927116394043, 9.186721801757812, 12.42654037475586, 25.985427856445312, 127.08550262451172, 24.77304458618164, 23.424972534179688, 10.712844848632812, 44.75141143798828, 25.884489059448242, 13.199905395507812, 18.14606475830078, 18.848581314086914, 14.905072212219238, 12.664250373840332, 13.855749130249023, 12.869104385375977, 9.780668258666992]
+Best model: Acc. Score = 0.514635, with parameters {'clasification__learning_rate': 0.3, 'clasification__max_depth': 6, 'clasification__max_leaves': 6, 'clasification__n_estimators': 25, 'pca__n_components': 30, 'selection__k': 70, 'selection__score_func': <function f_classif at 0x7fe79e550af0>, 'smote__k_neighbors': 10}

@@ -1,0 +1,35 @@
+CROSS_VALIDATION_CV: 5
+EVALUATION_FILES: ['../data/original/evaluation_dataset.csv', '..\\data\\preprocessed\\difference_preprocessed_evaluation_dataset.csv', '..\\data\\preprocessed\\ole_RemoveOutliers_and_preprocessing_pipe_evaluation_dataset.csv']
+FILE_N: 0
+HYPER_PARAMETER_ALPHA: [0.1, 0.01, 0.001, 0.0001, 1e-05, 1e-06]
+HYPER_PARAMETER_HIDDEN_LAYER_SIZES: [(100,)]
+HYPER_PARAMETER_K_FEATURES: [30, 40, 50, 60, 70, 80]
+HYPER_PARAMETER_OPTIMIZATION_BETA: 2
+HYPER_PARAMETER_OPTIMIZATION_CV: 5
+HYPER_PARAMETER_OPTIMIZATION_SCORING: accuracy
+HYPER_PARAMETER_SCORE_FUNC: [<function chi2 at 0x000002C597AF41F0>, <function f_classif at 0x000002C597AF40D0>]
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: keras_tensorflow_resnet
+OUTPUT_MODEL: ../data/models/keras_tensorflow_resnet_model_12_05_2022-19_05_15.pkl
+OUTPUT_MODEL_ARCHITECTURE_RESULTS: ../img/keras_tensorflow_resnet_model_12_05_2022-19_05_15.png
+OUTPUT_MODEL_FOLDER: ../data/models/keras_models
+OUTPUT_RESULTS: ../data/results/keras_tensorflow_resnet_model_12_05_2022-19_05_15.txt
+PUNISHMENT_FOR_FALSE_BANKRUPT_PREDICTION: 100
+RANDOM_SEED: 42
+TIMESTAMP: 12_05_2022-19_05_15
+TRAINING_FILES: ['../data/original/training_dataset.csv', '..\\data\\preprocessed\\difference_preprocessed_training_dataset.csv', '..\\data\\preprocessed\\ole_RemoveOutliers_and_preprocessing_pipe_training_dataset.csv']
+all_labels: [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0]
+evaluation_accuracy: 0.8083333333333333
+evaluation_confusion_matrix: True operational=1144, True bankrupt=33, False operational=176, False bankrupt=11
+input_n: 95
+loss: binary_crossentropy
+mean: nan
+optimizer: adam
+param: {'clf__dropout': 0, 'clf__epochs': 4}
+parameters: {'selection__k': [30, 40, 50, 60, 70, 80], 'selection__score_func': [<function chi2 at 0x000002C597AF41F0>, <function f_classif at 0x000002C597AF40D0>], 'pca__n_components': [20, 30, 95]}
+params: [{'clf__dropout': 0, 'clf__epochs': 4}]
+stdev: nan
+training_accuracy: 0.8544404071018961
+training_confusion_matrix: True operational=4702, True bankrupt=144, False operational=577, False bankrupt=32

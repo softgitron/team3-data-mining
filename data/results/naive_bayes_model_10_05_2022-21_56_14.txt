@@ -1,0 +1,58 @@
+HYPER_PARAMETER_K_FEATURES: [10, 20, 30, 40, 50, 60, 70, 80]
+HYPER_PARAMETER_OPTIMIZATION_CV: 10
+HYPER_PARAMETER_OPTIMIZATION_SCORING: balanced_accuracy
+HYPER_PARAMETER_SCORE_FUNC: [<function chi2 at 0x7fb7e315de50>, <function f_classif at 0x7fb7e315dd30>, <function mutual_info_classif at 0x7fb7e31759d0>]
+HYPER_PARAMETER_VAR_SMOOTHING: [1e-09, 0.050000001, 0.100000001, 0.15000000100000002, 0.200000001, 0.250000001, 0.30000000100000007, 0.35000000100000006, 0.40000000100000005, 0.45000000100000004, 0.500000001, 0.550000001, 0.6000000010000001, 0.650000001, 0.700000001, 0.750000001, 0.800000001, 0.8500000010000001, 0.900000001, 0.950000001]
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: naive_bayes
+OUTPUT_MODEL: ../data/models/naive_bayes_model_10_05_2022-21_56_14.pkl
+OUTPUT_RESULTS: ../data/results/naive_bayes_model_10_05_2022-21_56_14.txt
+RANDOM_SEED: 42
+TIMESTAMP: 10_05_2022-21_56_14
+VERBOSITY: 3
+all_samples_count: 5455
+bankrupt_prior_propability: 0.03226397800183318
+bankrupt_samples_count: 176
+best_parameters: {'classification__var_smoothing': 0.050000001, 'selection__k': 50, 'selection__score_func': <function chi2 at 0x7fb7e315de50>}
+current_variables: ['GaussianNB', 'GridSearchCV', 'HYPER_PARAMETER_K_FEATURES', 'HYPER_PARAMETER_OPTIMIZATION_CV', 'HYPER_PARAMETER_OPTIMIZATION_SCORING', 'HYPER_PARAMETER_SCORE_FUNC', 'HYPER_PARAMETER_VAR_SMOOTHING', 'INPUT_EVALUATION_FILE', 'INPUT_TRAINING_FILE', 'In', 'LABELS', 'METHOD_NAME', 'MinMaxScaler', 'OUTPUT_MODEL', 'OUTPUT_RESULTS', 'Out', 'PCA', 'Pipeline', 'RANDOM_SEED', 'SMOTE', 'SelectKBest', 'StandardScaler', 'StratifiedKFold', 'TIMESTAMP', 'VERBOSITY', '_', '_118', '__', '___', '__builtin__', '__builtins__', '__name__', '_dh', '_i', '_i113', '_i114', '_i115', '_i116', '_i117', '_i118', '_i119', '_i120', '_i121', '_i122', '_i123', '_i124', '_i125', '_ih', '_ii', '_iii', '_oh', 'all_samples_count', 'balanced_accuracy_score', 'bankrupt_prior_propability', 'bankrupt_samples_count', 'best_parameters', 'chi2', 'classification_report', 'classifier', 'confusion_matrix', 'confusion_matrix_to_string', 'current_variables', 'cv', 'environment_variables', 'estimator', 'evaluation_accuracy', 'evaluation_classification_report', 'evaluation_confusion_matrix', 'evaluation_dataset', 'evaluation_estimates', 'evaluation_features', 'evaluation_targets', 'exit', 'f_classif', 'feature_selection', 'file', 'get_ipython', 'handle', 'min_max_scaler', 'mutual_info_classif', 'numpy', 'operational_prior_propability', 'operational_samples_count', 'parameters', 'pd', 'pickle', 'pipeline', 'prior_propabilities', 'quit', 'results_string', 'smote', 'standard_scaler', 'time', 'training_accuracy', 'training_classification_report', 'training_confusion_matrix', 'training_dataset', 'training_estimates', 'training_features', 'training_targets', 'variable', 'variable_value']
+evaluation_accuracy: 0.7840909090909091
+evaluation_classification_report: {'Operational': {'precision': 0.9876543209876543, 'recall': 0.9090909090909091, 'f1-score': 0.9467455621301774, 'support': 1320}, 'Bankrupt': {'precision': 0.19463087248322147, 'recall': 0.6590909090909091, 'f1-score': 0.3005181347150259, 'support': 44}, 'accuracy': 0.9010263929618768, 'macro avg': {'precision': 0.5911425967354379, 'recall': 0.7840909090909091, 'f1-score': 0.6236318484226017, 'support': 1364}, 'weighted avg': {'precision': 0.9620729194229951, 'recall': 0.9010263929618768, 'f1-score': 0.9258995160845274, 'support': 1364}}
+evaluation_confusion_matrix: True operational=1200, True bankrupt=29, False operational=120, False bankrupt=15
+operational_prior_propability: 0.9677360219981668
+operational_samples_count: 5279
+parameters: {'selection__k': [10, 20, 30, 40, 50, 60, 70, 80], 'selection__score_func': [<function chi2 at 0x7fb7e315de50>, <function f_classif at 0x7fb7e315dd30>, <function mutual_info_classif at 0x7fb7e31759d0>], 'classification__var_smoothing': [1e-09, 0.050000001, 0.100000001, 0.15000000100000002, 0.200000001, 0.250000001, 0.30000000100000007, 0.35000000100000006, 0.40000000100000005, 0.45000000100000004, 0.500000001, 0.550000001, 0.6000000010000001, 0.650000001, 0.700000001, 0.750000001, 0.800000001, 0.8500000010000001, 0.900000001, 0.950000001]}
+prior_propabilities: [0.9677360219981668, 0.03226397800183318]
+results_string: HYPER_PARAMETER_K_FEATURES: [10, 20, 30, 40, 50, 60, 70, 80]
+HYPER_PARAMETER_OPTIMIZATION_CV: 10
+HYPER_PARAMETER_OPTIMIZATION_SCORING: balanced_accuracy
+HYPER_PARAMETER_SCORE_FUNC: [<function chi2 at 0x7fb7e315de50>, <function f_classif at 0x7fb7e315dd30>, <function mutual_info_classif at 0x7fb7e31759d0>]
+HYPER_PARAMETER_VAR_SMOOTHING: [1e-09, 0.050000001, 0.100000001, 0.15000000100000002, 0.200000001, 0.250000001, 0.30000000100000007, 0.35000000100000006, 0.40000000100000005, 0.45000000100000004, 0.500000001, 0.550000001, 0.6000000010000001, 0.650000001, 0.700000001, 0.750000001, 0.800000001, 0.8500000010000001, 0.900000001, 0.950000001]
+INPUT_EVALUATION_FILE: ../data/original/evaluation_dataset.csv
+INPUT_TRAINING_FILE: ../data/original/training_dataset.csv
+LABELS: ['Operational', 'Bankrupt']
+METHOD_NAME: naive_bayes
+OUTPUT_MODEL: ../data/models/naive_bayes_model_10_05_2022-21_56_14.pkl
+OUTPUT_RESULTS: ../data/results/naive_bayes_model_10_05_2022-21_56_14.txt
+RANDOM_SEED: 42
+TIMESTAMP: 10_05_2022-21_56_14
+VERBOSITY: 3
+all_samples_count: 5455
+bankrupt_prior_propability: 0.03226397800183318
+bankrupt_samples_count: 176
+best_parameters: {'classification__var_smoothing': 0.050000001, 'selection__k': 50, 'selection__score_func': <function chi2 at 0x7fb7e315de50>}
+current_variables: ['GaussianNB', 'GridSearchCV', 'HYPER_PARAMETER_K_FEATURES', 'HYPER_PARAMETER_OPTIMIZATION_CV', 'HYPER_PARAMETER_OPTIMIZATION_SCORING', 'HYPER_PARAMETER_SCORE_FUNC', 'HYPER_PARAMETER_VAR_SMOOTHING', 'INPUT_EVALUATION_FILE', 'INPUT_TRAINING_FILE', 'In', 'LABELS', 'METHOD_NAME', 'MinMaxScaler', 'OUTPUT_MODEL', 'OUTPUT_RESULTS', 'Out', 'PCA', 'Pipeline', 'RANDOM_SEED', 'SMOTE', 'SelectKBest', 'StandardScaler', 'StratifiedKFold', 'TIMESTAMP', 'VERBOSITY', '_', '_118', '__', '___', '__builtin__', '__builtins__', '__name__', '_dh', '_i', '_i113', '_i114', '_i115', '_i116', '_i117', '_i118', '_i119', '_i120', '_i121', '_i122', '_i123', '_i124', '_i125', '_ih', '_ii', '_iii', '_oh', 'all_samples_count', 'balanced_accuracy_score', 'bankrupt_prior_propability', 'bankrupt_samples_count', 'best_parameters', 'chi2', 'classification_report', 'classifier', 'confusion_matrix', 'confusion_matrix_to_string', 'current_variables', 'cv', 'environment_variables', 'estimator', 'evaluation_accuracy', 'evaluation_classification_report', 'evaluation_confusion_matrix', 'evaluation_dataset', 'evaluation_estimates', 'evaluation_features', 'evaluation_targets', 'exit', 'f_classif', 'feature_selection', 'file', 'get_ipython', 'handle', 'min_max_scaler', 'mutual_info_classif', 'numpy', 'operational_prior_propability', 'operational_samples_count', 'parameters', 'pd', 'pickle', 'pipeline', 'prior_propabilities', 'quit', 'results_string', 'smote', 'standard_scaler', 'time', 'training_accuracy', 'training_classification_report', 'training_confusion_matrix', 'training_dataset', 'training_estimates', 'training_features', 'training_targets', 'variable', 'variable_value']
+evaluation_accuracy: 0.7840909090909091
+evaluation_classification_report: {'Operational': {'precision': 0.9876543209876543, 'recall': 0.9090909090909091, 'f1-score': 0.9467455621301774, 'support': 1320}, 'Bankrupt': {'precision': 0.19463087248322147, 'recall': 0.6590909090909091, 'f1-score': 0.3005181347150259, 'support': 44}, 'accuracy': 0.9010263929618768, 'macro avg': {'precision': 0.5911425967354379, 'recall': 0.7840909090909091, 'f1-score': 0.6236318484226017, 'support': 1364}, 'weighted avg': {'precision': 0.9620729194229951, 'recall': 0.9010263929618768, 'f1-score': 0.9258995160845274, 'support': 1364}}
+evaluation_confusion_matrix: True operational=1200, True bankrupt=29, False operational=120, False bankrupt=15
+operational_prior_propability: 0.9677360219981668
+operational_samples_count: 5279
+parameters: {'selection__k': [10, 20, 30, 40, 50, 60, 70, 80], 'selection__score_func': [<function chi2 at 0x7fb7e315de50>, <function f_classif at 0x7fb7e315dd30>, <function mutual_info_classif at 0x7fb7e31759d0>], 'classification__var_smoothing': [1e-09, 0.050000001, 0.100000001, 0.15000000100000002, 0.200000001, 0.250000001, 0.30000000100000007, 0.35000000100000006, 0.40000000100000005, 0.45000000100000004, 0.500000001, 0.550000001, 0.6000000010000001, 0.650000001, 0.700000001, 0.750000001, 0.800000001, 0.8500000010000001, 0.900000001, 0.950000001]}
+prior_propabilities: [0.9677360219981668, 0.03226397800183318]
+
+training_accuracy: 0.8214882295200537
+training_classification_report: {'Operational': {'precision': 0.9901679639492011, 'recall': 0.9157037317673802, 'f1-score': 0.9514811534297806, 'support': 5279}, 'Bankrupt': {'precision': 0.22338568935427575, 'recall': 0.7272727272727273, 'f1-score': 0.34178905206942595, 'support': 176}, 'accuracy': 0.9096241979835014, 'macro avg': {'precision': 0.6067768266517385, 'recall': 0.8214882295200537, 'f1-score': 0.6466351027496032, 'support': 5455}, 'weighted avg': {'precision': 0.9654285175094749, 'recall': 0.9096241979835014, 'f1-score': 0.9318100608835985, 'support': 5455}}
+training_confusion_matrix: True operational=4834, True bankrupt=128, False operational=445, False bankrupt=48
+variable: variable
+variable_value: variable
